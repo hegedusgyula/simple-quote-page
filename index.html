@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html>
+
 <head>
   <meta charset="utf-8">
- <link rel="stylesheet" type="text/css" href="main.css">
-  <title>Princess Illusion</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+	<html lang="en">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text/Julius+Sans+One" rel="stylesheet">
+
+  <title>Freedom</title>
+</head> 
+
 <body>
-<h1>első commit</h1>
+	
+<div class="flags" style=" width:100vw;height:40px; border-radius:3px;">
+	
+	
+    <div class="flag" id="flage" onclick="myFunctione()" style="margin-left:5px; border-radius:5px; text-align:center;width:60px;height:100%"></div>
+    
+    <div class="flag" id="flagd" onclick="myFunctiond()" style="margin-left: 10px;border-radius:5px; text-align:center;width:60px;height:100%" ></div>
+    
+    <div class="flag" id="flagf"  onclick="myFunctionf()" style="margin-left:10px;border-radius:5px;text-align:center;width:60px;height:100%"></div>
+</div>
+    
+<div class="zitat" style="width:100vw;">
+    <p class="quote" id="quo"></p>
+    <p class="author"><small>– Jean-Jacques Rousseau</small></p>
+   
+</div>
+
+<script>    
+    function myFunctione() {
+    document.getElementById("quo").innerHTML = "The freedom of Mankind does not lie in the fact that we can do what we want, but that we do not have to do that which we do not want.";
+    }
+    
+    function myFunctiond() {
+    document.getElementById("quo").innerHTML ="Die Freiheit der Menschheit liegt nicht in der Tatsache, dass wir tun können, was wir wollen, sondern dass wir nicht das tun müssen, was wir nicht wollen.";}
+    
+    function myFunctionf() {
+    document.getElementById("quo").innerHTML ="La liberté de l'humanité ne réside pas dans le fait qu'elle peut faire ce que nous voulons, mais que nous n'avons pas à faire ce que nous ne voulons pas.";
+    }
+
+</script>
 
 </body>
-</html>
